@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex; /* Adicionado */
+    flex-direction: column; /* Adicionado */
+}
+
+h1 {
+    color: #00063b; /* Cor do título */
+    text-align: center;
+}
+
+.grupo-formulario {
+    margin-bottom: 15px;
+    text-align: left;
+    display: flex; /* Adicionado */
+    flex-direction: column; /* Adicionado */
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    max-width: 97%; /* Mantém a largura dentro do contêiner */
+    padding: 8px; /* Ajuste o padding para menor */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 30px; /* Defina uma altura fixa, se necessário */
+}
+
+
+.shadow__btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    background: rgb(0, 0, 0);
+    box-shadow: 0 0 25px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.shadow__btn:hover {
+    box-shadow: 0 0 5px rgb(0, 0, 0),
+                0 0 25px rgb(0, 0, 0),
+                0 0 50px rgb(0, 0, 0),
+                0 0 100px rgb(0, 0, 0);
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+}
+
+.linha-separacao {
+    margin: 20px 0;
+}
+
+.link-login {
+    color: #ff0000; /* Cor do link */
+    text-decoration: none;
+}
+
+.link-login:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #d9534f; /* Cor do título */
+}
